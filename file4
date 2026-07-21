@@ -11,3 +11,11 @@ sudo systemctl daemon-reload
 systemctl enable jenkins
 systemctl start jenkins
 systemctl status jenkins
+
+
+
+
+
+
+
+sureshav
