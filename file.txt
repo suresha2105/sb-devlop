@@ -1,5 +1,10 @@
+
+
 welcome to github account crreting     suresha    
+<<<<<<< HEAD
 today we are learing to connect local repository to remot
+=======
+>>>>>>> testing
 
 
 
@@ -8,6 +13,16 @@ today we are learing to connect local repository to remot
 
 
 
+<<<<<<< HEAD
 
 
  did you check for thrat one please let uskmow i am wait for yopu ok na that site    
+=======
+a basic, unformatted digital document opened with standard tools like Notepad on Windows or TextEdit on Mac. If you meant the South Korean boy band Tomorrow X Together (TXT), they are a five-
+
+
+
+
+
+today we are learing to connect local repository to remote   
+>>>>>>> testing
