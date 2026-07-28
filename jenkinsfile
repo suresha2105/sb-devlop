@@ -9,7 +9,7 @@ pipeline{
     stages{
         stage('Git-checkout'){
             steps{
-                git branch: 'dev' , url: 'https://github.com/suresha2105/sb-devlop.git'
+                git branch: 'qulity' , url: 'https://github.com/suresha2105/sb-devlop.git'
             }
         }
         stage('Code Compile'){
