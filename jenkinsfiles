@@ -10,7 +10,7 @@ pipeline{
     stages{
         stages(" git checkout"){
             steps{
-                git branch: 'qulity', url: 'https://github.com/suresha2105/sb-devlop.git'
+                git branch: 'master', url: 'https://github.com/suresha2105/sb-devlop.git'
             }
         }
 
