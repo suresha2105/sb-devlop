@@ -1,0 +1,56 @@
+pipeline{
+    agent any
+    
+
+    tools{
+        jdk "java-11"
+        maven "maven"
+    }
+
+    stages{
+        stages(" git checkout"){
+            steps{
+                git branch: 'qulity', url: 'https://github.com/suresha2105/sb-devlop.git'
+            }
+        }
+
+
+        stages('code compile'){
+            steps{
+                sh 'mvn compile'
+            }
+        }
+
+
+        stages('java maven packeg'){
+            steps{
+                sh 'mvn clean install'
+            }
+        }
+
+
+        stages('images build'){
+            steps{
+                sh 'docker build -t 'sureshav2105/app .
+            }
+        }
+        stages('containerize'){
+            steps{
+                sh 'docker run -it -d --name c1 -p 9001:80 sureshav2105/app'
+            }
+        }
+
+        stages('docker login'){
+            steps{
+                sh
+            }
+
+        }
+
+        stages('pushing images to repository'){
+            steps{
+                sh 'docker push sureshav2105/app'
+            }
+        }
+    }
+}
