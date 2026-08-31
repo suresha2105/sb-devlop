@@ -31,7 +31,7 @@ pipeline{
 
         stages('images build'){
             steps{
-                sh 'docker build -t'' sureshav2105/app .
+                sh 'docker build -t' sureshav2105/app .
             }
         }
         stages('containerize'){
